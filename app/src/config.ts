@@ -17,13 +17,13 @@ export default defineConfig({
           pagination: 'count',
           title: 'Этот день настал!',
           description:
-            "<b>УРАААА С ПРАЗДНИКОООМ!! НАМ ИСПОЛНИЛСЯ ОДИН ГОДИК ЮХУУУУ!</b> Удивительно, вообще не верится, да? <br><br>Я уверен, что ты ждёшь от меня какой нибудь <b>подарок</b>. Но я подумал, что <b>дарить подарок на такую дату просто так — это скучно.</b> Поэтому, для начала, тебе придётся <b>кое что сделать...</b>",
+            '<b>УРАААА С ПРАЗДНИКОООМ!! НАМ ИСПОЛНИЛСЯ ОДИН ГОДИК ЮХУУУУ!</b> Удивительно, вообще не верится, да? <br><br>Я уверен, что ты ждёшь от меня какой нибудь <b>подарок</b>. Но я подумал, что <b>дарить подарок на такую дату просто так — это скучно.</b> Поэтому, для начала, тебе придётся <b>кое что сделать...</b>',
           button: 'Интересненько...',
-            },
+        },
 
-            // what
+        // what
         {
-           media: {
+          media: {
             type: 'sticker',
             src: import('./assets/stickers/what.tgs'),
             size: 250,
@@ -32,358 +32,363 @@ export default defineConfig({
           pagination: 'count',
           title: 'Чо за прикол? Что это?',
           description:
-            "По началу я хотел сделать здесь <b>прикольный квиз</b> на тематику наших воспоминаний, чтобы мы оба вспомнили много мелочей, посмеялись и пообсуждали всё это. <br><br>Но в ходе создания вот этого бота, я понял, что квиз <b>может испортить впечатления от предстоящего подарка,</b> да и в целом <b>я не знаю как это правильно подать.</b> <br><br>Но это совершенно не важно! Ведь я придумал <b>кое что покруче!</b>",
+            'По началу я хотел сделать здесь <b>прикольный квиз</b> на тематику наших воспоминаний, чтобы мы оба вспомнили много мелочей, посмеялись и пообсуждали всё это. <br><br>Но в ходе создания вот этого бота, я понял, что квиз <b>может испортить впечатления от предстоящего подарка,</b> да и в целом <b>я не знаю как это правильно подать.</b> <br><br>Но это совершенно не важно! Ведь я придумал <b>кое что покруче!</b>',
           button: 'И что же это?',
-            },
+        },
 
-            // what2
-            {
-                media: {
-                    type: 'sticker',
-                    src: import('./assets/stickers/bro.tgs'),
-                    size: 250,
-                },
-                shape: 'square',
-                pagination: 'count',
-                title: 'RitMax - Бот, отслеживающий наши изменения',
-                description:
-                    "Я подумал, что было бы интересно каждый год заходить сюда и отвечать на <b>одни и те же вопросы,</b> чтобы посмотреть на то, как мы <b>растём и меняемся вместе с нашми отношениями.</b> <br><br>Я максимально <b>упростил ввод</b> всех ответов и сделал его <b>настолько интересным, насколько смог,</b> так что много времени это не займёт, так ещё и должно быть весело! <br><br><b>Надеюсь тебе понравится <3</b>",
-                button: 'Звучит миленько, поехали :3',
-            },
+        // what2
+        {
+          media: {
+            type: 'sticker',
+            src: import('./assets/stickers/bro.tgs'),
+            size: 250,
+          },
+          shape: 'square',
+          pagination: 'count',
+          title: 'RitMax - Бот, отслеживающий наши изменения',
+          description:
+            'Я подумал, что было бы интересно каждый год заходить сюда и отвечать на <b>одни и те же вопросы,</b> чтобы посмотреть на то, как мы <b>растём и меняемся вместе с нашми отношениями.</b> <br><br>Я максимально <b>упростил ввод</b> всех ответов и сделал его <b>настолько интересным, насколько смог,</b> так что много времени это не займёт, так ещё и должно быть весело! <br><br><b>Надеюсь тебе понравится <3</b>',
+          button: 'Звучит миленько, поехали :3',
+        },
 
-            // love_start
-            {
-                media: {
-                    type: 'sticker',
-                    src: import('./assets/stickers/love.tgs'),
-                    size: 250,
-                },
-                shape: 'square',
-                pagination: 'count',
-                title: '1 часть - Любовь',
-                description:
-                    "Постарайся отвечать честно и развёрнуто, без отговорок",
-                button: 'Агась',
-            },
+        // love_start
+        {
+          media: {
+            type: 'sticker',
+            src: import('./assets/stickers/love.tgs'),
+            size: 250,
+          },
+          shape: 'square',
+          pagination: 'count',
+          title: '1 часть - Любовь',
+          description: 'Постарайся отвечать честно и развёрнуто, без отговорок',
+          button: 'Агась',
+        },
 
-            // what is love
+        // what is love
+        {
+          extends: 'form', // note, it's important to extend from 'form' here
+          media: {
+            type: 'sticker',
+            src: import('./assets/stickers/love2.tgs'),
+            size: 250,
+          },
+          shape: 'square',
+          pagination: 'count',
+          title: 'Начнём сразу с козырей',
+          description: 'Что такое любовь для тебя?',
+          form: [
             {
-                extends: 'form', // note, it's important to extend from 'form' here
-                media: {
-                    type: 'sticker',
-                    src: import('./assets/stickers/love2.tgs'),
-                    size: 250,
-                },
-                shape: 'square',
-                pagination: 'count',
-                title: 'Начнём сразу с козырей',
-                description: 'Что такое любовь для тебя?',
-                form: [
-                    {
-                        id: 'love',
-                        placeholder: 'Ватсап собака',
-                        type: 'text',
-                    },
-                ],
-                button: 'Едем дальше',
+              id: 'love',
+              placeholder: 'Ватсап собака',
+              type: 'text',
             },
+          ],
+          button: 'Едем дальше',
+        },
 
-            // wonders
+        // wonders
+        {
+          extends: 'form', // note, it's important to extend from 'form' here
+          media: {
+            type: 'sticker',
+            src: import('./assets/stickers/love3.tgs'),
+            size: 250,
+          },
+          shape: 'square',
+          pagination: 'count',
+          title: 'Опа! Ещё один вопрос!',
+          description:
+            'Ты счастлив(а), что ты в отношениях? Оправдались ли мечты и желания, когда ты только воображал(а), что у тебя будет партнёр?',
+          form: [
             {
-                extends: 'form', // note, it's important to extend from 'form' here
-                media: {
-                    type: 'sticker',
-                    src: import('./assets/stickers/love3.tgs'),
-                    size: 250,
-                },
-                shape: 'square',
-                pagination: 'count',
-                title: 'Опа! Ещё один вопрос!',
-                description: 'Ты счастлив(а), что ты в отношениях? Оправдались ли мечты и желания, когда ты только воображал(а), что у тебя будет партнёр?',
-                form: [
-                    {
-                        id: 'love',
-                        placeholder: 'Пук',
-                        type: 'text',
-                    },
-                ],
-                button: 'Оп',
+              id: 'love',
+              placeholder: 'Пук',
+              type: 'text',
             },
+          ],
+          button: 'Оп',
+        },
 
-            // wonders
+        // wonders
+        {
+          extends: 'form', // note, it's important to extend from 'form' here
+          media: {
+            type: 'sticker',
+            src: import('./assets/stickers/hmm.tgs'),
+            size: 250,
+          },
+          shape: 'square',
+          pagination: 'count',
+          title: 'Опа! Я тебя поймал!',
+          description:
+            'Что ты получаешь из отношений такого, чего не можешь получить в одиночку или с друзьями?',
+          form: [
             {
-                extends: 'form', // note, it's important to extend from 'form' here
-                media: {
-                    type: 'sticker',
-                    src: import('./assets/stickers/hmm.tgs'),
-                    size: 250,
-                },
-                shape: 'square',
-                pagination: 'count',
-                title: 'Опа! Я тебя поймал!',
-                description: 'Что ты получаешь из отношений такого, чего не можешь получить в одиночку или с друзьями?',
-                form: [
-                    {
-                        id: 'love',
-                        placeholder: 'Чпок',
-                        type: 'text',
-                    },
-                ],
-                button: 'Трататататата',
+              id: 'love',
+              placeholder: 'Чпок',
+              type: 'text',
             },
+          ],
+          button: 'Трататататата',
+        },
 
-            // teach
+        // teach
+        {
+          extends: 'form', // note, it's important to extend from 'form' here
+          media: {
+            type: 'sticker',
+            src: import('./assets/stickers/love4.tgs'),
+            size: 250,
+          },
+          shape: 'square',
+          pagination: 'count',
+          title: 'Рааарр',
+          description:
+            'Что в наших отношениях доставляет тебе больше всего радости?',
+          form: [
             {
-                extends: 'form', // note, it's important to extend from 'form' here
-                media: {
-                    type: 'sticker',
-                    src: import('./assets/stickers/love4.tgs'),
-                    size: 250,
-                },
-                shape: 'square',
-                pagination: 'count',
-                title: 'Рааарр',
-                description: 'Что в наших отношениях доставляет тебе больше всего радости?',
-                form: [
-                    {
-                        id: 'love',
-                        placeholder: 'Да я люблю сосать члееен. Это пенис!',
-                        type: 'text',
-                    },
-                ],
-                button: 'Трах бабах',
+              id: 'love',
+              placeholder: 'Да я люблю сосать члееен. Это пенис!',
+              type: 'text',
             },
+          ],
+          button: 'Трах бабах',
+        },
 
-            // funny
+        // funny
+        {
+          extends: 'form', // note, it's important to extend from 'form' here
+          media: {
+            type: 'sticker',
+            src: import('./assets/stickers/bro.tgs'),
+            size: 250,
+          },
+          shape: 'square',
+          pagination: 'count',
+          title: 'Ух, ну тут надо подумать...',
+          description:
+            'Опиши своего партнёра сейчас. Что тебе в нём нравится? Что тебе в нём не нравится? В чём он хорош? В чём он плох? Чего бы тебе хотелось от него ещё?',
+          form: [
             {
-                extends: 'form', // note, it's important to extend from 'form' here
-                media: {
-                    type: 'sticker',
-                    src: import('./assets/stickers/bro.tgs'),
-                    size: 250,
-                },
-                shape: 'square',
-                pagination: 'count',
-                title: 'Ух, ну тут надо подумать...',
-                description: 'Опиши своего партнёра сейчас. Что тебе в нём нравится? Что тебе в нём не нравится? В чём он хорош? В чём он плох? Чего бы тебе хотелось от него ещё?',
-                form: [
-                    {
-                        id: 'love',
-                        placeholder: 'Хмхмхм...',
-                        type: 'text',
-                    },
-                ],
-                button: 'Чикипяу',
+              id: 'love',
+              placeholder: 'Хмхмхм...',
+              type: 'text',
             },
+          ],
+          button: 'Чикипяу',
+        },
 
-            // funny
+        // funny
+        {
+          extends: 'form', // note, it's important to extend from 'form' here
+          media: {
+            type: 'sticker',
+            src: import('./assets/stickers/haha.tgs'),
+            size: 250,
+          },
+          shape: 'square',
+          pagination: 'count',
+          title: 'Хихи хаха',
+          description:
+            'Какой самый ахуенный рофл появился между нами за последний год?',
+          form: [
             {
-                extends: 'form', // note, it's important to extend from 'form' here
-                media: {
-                    type: 'sticker',
-                    src: import('./assets/stickers/haha.tgs'),
-                    size: 250,
-                },
-                shape: 'square',
-                pagination: 'count',
-                title: 'Хихи хаха',
-                description: 'Какой самый ахуенный рофл появился между нами за последний год?',
-                form: [
-                    {
-                        id: 'love',
-                        placeholder: 'Ах! Ах! Ах! Да!',
-                        type: 'text',
-                    },
-                ],
-                button: 'Чикипяу',
+              id: 'love',
+              placeholder: 'Ах! Ах! Ах! Да!',
+              type: 'text',
             },
+          ],
+          button: 'Чикипяу',
+        },
 
-            // funny
+        // funny
+        {
+          extends: 'form', // note, it's important to extend from 'form' here
+          media: {
+            type: 'sticker',
+            src: import('./assets/stickers/sorry.tgs'),
+            size: 250,
+          },
+          shape: 'square',
+          pagination: 'count',
+          title: 'Фух, вроде последний',
+          description: 'Мы часто ссоримся?',
+          form: [
             {
-                extends: 'form', // note, it's important to extend from 'form' here
-                media: {
-                    type: 'sticker',
-                    src: import('./assets/stickers/sorry.tgs'),
-                    size: 250,
-                },
-                shape: 'square',
-                pagination: 'count',
-                title: 'Фух, вроде последний',
-                description: 'Мы часто ссоримся?',
-                form: [
-                    {
-                        id: 'love1',
-                        placeholder: 'Довольно часто, странный период',
-                        type: 'checkbox',
-                    },
-                    {
-                        id: 'love2',
-                        placeholder: 'В пределах нормы, но ссоры проходят сложно',
-                        type: 'checkbox',
-                    },
-                    {
-                        id: 'love3',
-                        placeholder: 'Почти не ссоримся, живём в радости',
-                        type: 'checkbox',
-                    },
-                ],
-                button: 'Понятненько',
+              id: 'love1',
+              placeholder: 'Довольно часто, странный период',
+              type: 'checkbox',
             },
+            {
+              id: 'love2',
+              placeholder: 'В пределах нормы, но ссоры проходят сложно',
+              type: 'checkbox',
+            },
+            {
+              id: 'love3',
+              placeholder: 'Почти не ссоримся, живём в радости',
+              type: 'checkbox',
+            },
+          ],
+          button: 'Понятненько',
+        },
 
-            // funny
+        // funny
+        {
+          extends: 'form', // note, it's important to extend from 'form' here
+          media: {
+            type: 'sticker',
+            src: import('./assets/stickers/cool.tgs'),
+            size: 250,
+          },
+          shape: 'square',
+          pagination: 'count',
+          title: 'Вот теперь точно последний',
+          description: 'Мы часто смеёмся?',
+          form: [
             {
-                extends: 'form', // note, it's important to extend from 'form' here
-                media: {
-                    type: 'sticker',
-                    src: import('./assets/stickers/cool.tgs'),
-                    size: 250,
-                },
-                shape: 'square',
-                pagination: 'count',
-                title: 'Вот теперь точно последний',
-                description: 'Мы часто смеёмся?',
-                form: [
-                    {
-                        id: 'love1',
-                        placeholder: 'Довольно часто, мне безумно весело со своим партнёром',
-                        type: 'checkbox',
-                    },
-                    {
-                        id: 'love2',
-                        placeholder: 'Ну, ничего необычного. Смехуёчки есть, но их не так много',
-                        type: 'checkbox',
-                    },
-                    {
-                        id: 'love3',
-                        placeholder: 'Чето както всё скудновато(',
-                        type: 'checkbox',
-                    },
-                ],
-                button: 'Закончили упражнение!',
+              id: 'love1',
+              placeholder:
+                'Довольно часто, мне безумно весело со своим партнёром',
+              type: 'checkbox',
             },
+            {
+              id: 'love2',
+              placeholder:
+                'Ну, ничего необычного. Смехуёчки есть, но их не так много',
+              type: 'checkbox',
+            },
+            {
+              id: 'love3',
+              placeholder: 'Чето както всё скудновато(',
+              type: 'checkbox',
+            },
+          ],
+          button: 'Закончили упражнение!',
+        },
 
-            // personal_start
-            {
-                media: {
-                    type: 'sticker',
-                    src: import('./assets/stickers/summer.tgs'),
-                    size: 250,
-                },
-                shape: 'square',
-                pagination: 'count',
-                title: '2 часть - Личное',
-                description:
-                    "Не бойся, это последняя часть",
-                button: 'Юхуу, поехали',
-            },
+        // personal_start
+        {
+          media: {
+            type: 'sticker',
+            src: import('./assets/stickers/summer.tgs'),
+            size: 250,
+          },
+          shape: 'square',
+          pagination: 'count',
+          title: '2 часть - Личное',
+          description: 'Не бойся, это последняя часть',
+          button: 'Юхуу, поехали',
+        },
 
-            // funny
+        // funny
+        {
+          extends: 'form', // note, it's important to extend from 'form' here
+          media: {
+            type: 'sticker',
+            src: import('./assets/stickers/best.tgs'),
+            size: 250,
+          },
+          shape: 'square',
+          pagination: 'count',
+          title: 'Йо, я крутой как игорь крутой',
+          description: 'Каким было твоё лучшее решение за год?',
+          form: [
             {
-                extends: 'form', // note, it's important to extend from 'form' here
-                media: {
-                    type: 'sticker',
-                    src: import('./assets/stickers/best.tgs'),
-                    size: 250,
-                },
-                shape: 'square',
-                pagination: 'count',
-                title: 'Йо, я крутой как игорь крутой',
-                description: 'Каким было твоё лучшее решение за год?',
-                form: [
-                    {
-                        id: 'personal',
-                        placeholder: 'Просто ахуительным!',
-                        type: 'text',
-                    },
-                ],
-                button: 'Иду по тропинке в голове ляляля',
+              id: 'personal',
+              placeholder: 'Просто ахуительным!',
+              type: 'text',
             },
+          ],
+          button: 'Иду по тропинке в голове ляляля',
+        },
 
-            // funny
+        // funny
+        {
+          extends: 'form', // note, it's important to extend from 'form' here
+          media: {
+            type: 'sticker',
+            src: import('./assets/stickers/wow.tgs'),
+            size: 250,
+          },
+          shape: 'square',
+          pagination: 'count',
+          title: 'АХАХАХАХ КЛЁВО СМЕШНОЕ СЛОВО',
+          description: 'Какая у тебя цель?',
+          form: [
             {
-                extends: 'form', // note, it's important to extend from 'form' here
-                media: {
-                    type: 'sticker',
-                    src: import('./assets/stickers/wow.tgs'),
-                    size: 250,
-                },
-                shape: 'square',
-                pagination: 'count',
-                title: 'АХАХАХАХ КЛЁВО СМЕШНОЕ СЛОВО',
-                description: 'Какая у тебя цель?',
-                form: [
-                    {
-                        id: 'personal',
-                        placeholder: 'Жрать срать спать',
-                        type: 'text',
-                    },
-                ],
-                button: 'Давай дальше',
+              id: 'personal',
+              placeholder: 'Жрать срать спать',
+              type: 'text',
             },
+          ],
+          button: 'Давай дальше',
+        },
 
-            // funny
+        // funny
+        {
+          extends: 'form', // note, it's important to extend from 'form' here
+          media: {
+            type: 'sticker',
+            src: import('./assets/stickers/hi.tgs'),
+            size: 250,
+          },
+          shape: 'square',
+          pagination: 'count',
+          title: 'Щаща ещё немного',
+          description: 'Кого считаешь лучшим другом? Почему?',
+          form: [
             {
-                extends: 'form', // note, it's important to extend from 'form' here
-                media: {
-                    type: 'sticker',
-                    src: import('./assets/stickers/hi.tgs'),
-                    size: 250,
-                },
-                shape: 'square',
-                pagination: 'count',
-                title: 'Щаща ещё немного',
-                description: 'Кого считаешь лучшим другом? Почему?',
-                form: [
-                    {
-                        id: 'personal',
-                        placeholder: 'Себя потому что я крутой',
-                        type: 'text',
-                    },
-                ],
-                button: 'Лесго',
+              id: 'personal',
+              placeholder: 'Себя потому что я крутой',
+              type: 'text',
             },
+          ],
+          button: 'Лесго',
+        },
 
-            // funny
+        // funny
+        {
+          extends: 'form', // note, it's important to extend from 'form' here
+          media: {
+            type: 'sticker',
+            src: import('./assets/stickers/eat.tgs'),
+            size: 250,
+          },
+          shape: 'square',
+          pagination: 'count',
+          title: 'Последний',
+          description: 'Ты счастлив(а)?',
+          form: [
             {
-                extends: 'form', // note, it's important to extend from 'form' here
-                media: {
-                    type: 'sticker',
-                    src: import('./assets/stickers/eat.tgs'),
-                    size: 250,
-                },
-                shape: 'square',
-                pagination: 'count',
-                title: 'Последний',
-                description: 'Ты счастлив(а)?',
-                form: [
-                    {
-                        id: 'personal1',
-                        placeholder: 'Да',
-                        type: 'checkbox',
-                    },
-                    {
-                        id: 'personal2',
-                        placeholder: 'Нет',
-                        type: 'checkbox',
-                    },
-                ],
-                button: 'Едем!',
+              id: 'personal1',
+              placeholder: 'Да',
+              type: 'checkbox',
             },
+            {
+              id: 'personal2',
+              placeholder: 'Нет',
+              type: 'checkbox',
+            },
+          ],
+          button: 'Едем!',
+        },
 
-            // love_start
-            {
-                media: {
-                    type: 'sticker',
-                    src: import('./assets/stickers/rar.tgs'),
-                    size: 250,
-                },
-                shape: 'square',
-                pagination: 'count',
-                title: 'Спасибо!',
-                description:
-                    "<b>Я люблю тебя</b>, спасибо огромное за прохождение этого опросника. Думаю, что в будущем мы когда нибудь это перечитаем и нам будет очень весело. <br><br><b>Поздравляю тебя с праздничком, зай.</b> Я счастлив, что однажды познакомился с тобой. <br><b>До встречи в RitMax в следующем году!</b>",
-                button: 'И я тебя люблю!',
-            },
+        // love_start
+        {
+          media: {
+            type: 'sticker',
+            src: import('./assets/stickers/rar.tgs'),
+            size: 250,
+          },
+          shape: 'square',
+          pagination: 'count',
+          title: 'Спасибо!',
+          description:
+            '<b>Я люблю тебя</b>, спасибо огромное за прохождение этого опросника. Думаю, что в будущем мы когда нибудь это перечитаем и нам будет очень весело. <br><br><b>Поздравляю тебя с праздничком, зай.</b> Я счастлив, что однажды познакомился с тобой. <br><b>До встречи в RitMax в следующем году!</b>',
+          button: 'И я тебя люблю!',
+        },
 
         // go to paywall slide
         {
@@ -396,8 +401,8 @@ export default defineConfig({
           pagination: 'count',
           textAlign: 'center',
           title: '<3',
-          description: " ",
-            button: ' '
+          description: ' ',
+          button: ' ',
         },
       ],
     },
