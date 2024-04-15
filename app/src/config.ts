@@ -390,7 +390,7 @@ export default defineConfig({
           button: 'И я тебя люблю!',
         },
 
-        // go to paywall slidex
+        // go to paywall slidexxxx
         {
           media: {
             type: 'sticker',
