@@ -2,7 +2,7 @@ import { defineConfig } from '@tok/generation';
 
 export default defineConfig({
   locale: {
-    fallback: 'en',
+    fallback: 'ru',
     ru: import('./locales/ru.json'),
     en: import('./locales/en.json'),
   },
@@ -17,43 +17,43 @@ export default defineConfig({
         size: 150,
       },
       shape: 'square',
-      title: 'Выберите премиум тариф:',
+      title: '_first_page.title',
       products: [
         {
-          id: '1_month',
-          title: '1 месяц подписки',
-          description: '290 руб./месяц',
-          discount: '',
-          price: 290,
+          id: '_first_page.list1.id',
+          title: '_first_page.list1.title',
+          description: '_first_page.list1.description',
+          discount: '_first_page.list1.discount',
+          price: '_first_page.list1.price',
         },
         {
-          id: '2_months',
-          title: '2 месяца подписки',
-          description: '490 руб./месяц',
-          discount: 'Скидка 15%',
-          price: 490,
+          id: '_first_page.list2.id',
+          title: '_first_page.list2.title',
+          description: '_first_page.list2.description',
+          discount: '_first_page.list2.discount',
+          price: '_first_page.list2.price',
         },
         {
-          id: '3_months',
-          title: '3 месяца подписки',
-          description: '650 руб./месяц',
-          discount: 'Скидка 25%',
-          price: 650,
+          id: '_first_page.list3.id',
+          title: '_first_page.list3.title',
+          description: '_first_page.list3.description',
+          discount: '_first_page.list3.discount',
+          price: '_first_page.list3.price',
         },
       ],
-      mainButtonText: 'Продолжить',
+      mainButtonText: '_first_page.button',
       popup: {
         // popup for payment methods choice
         type: 'web',
       },
       links: [
         {
-          text: 'Политика конфиденциальности',
-          href: 'https://telegram.org/privacy/ru',
+          text: '_first_page.policy',
+          href: '_first_page.policy_href',
         },
         {
-          text: 'Пользовательское соглашение',
-          href: 'https://telegram.org/tos/ru',
+          text: '_first_page.terms',
+          href: '_first_page.terms_href',
         },
       ],
     },

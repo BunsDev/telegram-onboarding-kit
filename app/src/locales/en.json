@@ -1,5 +1,5 @@
 {
-  "first_page": {
+  "_first_page": {
     "title": "Выберите премиум тариф:",
     "list1": {
       "id": "1_month",
@@ -28,12 +28,17 @@
     "terms": "Условия использования",
     "terms_href": "https://telegram.org/tos/ru"
   },
-  "popup": {
+  "_popup": {
     "title": "Выберите способ оплаты",
     "payments_ru": "Российские карты",
     "payments_en": "Международные карты",
     "wallet_pay": "Wallet Pay",
     "crypto_pay": "Crypto Pay"
   },
-  "buy": "Купить за {price}"
+  "_buy": "Купить за {price}",
+  "_alerts": {
+    "payment": {
+      "canceled": "Вы отменили выбор оплаты"
+    }
+  }
 }

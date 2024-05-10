@@ -11,13 +11,31 @@ export type PaywallPopupEmits = {
 
 const defaultButtons = [
   {
-    id: 'telegram_payments',
+    id: 'payments_ru',
+    media: {
+      type: 'emodji' as const,
+      src: '🇷🇺',
+    },
+    type: 'default' as const,
+    text: 'Российские карты',
+  },
+  {
+    id: 'payments_en',
     media: {
       type: 'emodji' as const,
       src: '💳',
     },
     type: 'default' as const,
-    text: 'Bank card',
+    text: 'Международные карты',
+  },
+  {
+    id: 'crypto_pay',
+    media: {
+      type: 'emodji' as const,
+      src: '💎',
+    },
+    type: 'default' as const,
+    text: 'Crypto pay',
   },
   {
     id: 'wallet_pay',
@@ -28,11 +46,12 @@ const defaultButtons = [
     type: 'default' as const,
     text: 'Wallet pay',
   },
+  
 ];
 
 export const PaywallPopupDefaultProps = {
   type: 'telegram',
-  title: 'Choose the payment method',
+  title: 'Выберите способ оплаты:',
   message: '',
   buttons: () => defaultButtons,
 } as const;
