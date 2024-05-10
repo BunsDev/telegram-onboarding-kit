@@ -3,7 +3,7 @@
     "version": "0.0.0",
     "dependencies": {
         "@tok/ui": "*",
-        "@twa-dev/sdk": "^6.9.0",
+        "@twa-dev/sdk": "*",
         "lottie-web": "^5.12.2",
         "vue": "^3.3.4",
         "vue-router": "^4.2.5"
