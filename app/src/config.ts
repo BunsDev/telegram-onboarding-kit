@@ -7,53 +7,6 @@ export default defineConfig({
     en: import('./locales/en.json'),
   },
   pages: [
-    // start
-    {
-      extends: 'form', // note, it's important to extend from 'form' here
-      media: {
-        type: 'sticker',
-        src: import('./assets/stickers/duck_hello.tgs'),
-        size: 150,
-      },
-      shape: 'square',
-      pagination: 'count',
-      title: 'GPT4Telegrambot Inc.',
-      description: 'Выберите сервис для покупки',
-      form: [
-        {
-          id: 'premium_id',
-          placeholder: 'Premium',
-          type: 'checkbox',
-        },
-        {
-          id: 'premium_x2_id',
-          placeholder: 'Premium X2',
-          type: 'checkbox',
-        },
-        {
-          id: 'midjourney_id',
-          placeholder: 'Midjourney',
-          type: 'checkbox',
-        },
-        {
-          id: 'claude_id',
-          placeholder: 'Claude 3',
-          type: 'checkbox',
-        },
-        {
-          id: 'suno_id',
-          placeholder: 'Suno AI',
-          type: 'checkbox',
-        },
-        {
-          id: 'eightify_id',
-          placeholder: 'Eightify',
-          type: 'checkbox',
-        },
-      ],
-      button: 'Next',
-    },
-
     // paywall
     {
       extends: 'paywall',
@@ -103,6 +56,29 @@ export default defineConfig({
           href: '_first_page.terms_href',
         },
       ],
+    },
+    // form
+    {
+      extends: 'form', // note, it's important to extend from 'form' here
+      path: '/email',
+      textAlign: 'center',
+      media: {
+        type: 'emodji' as const,
+        src: '💌',
+        size: 50,
+      },
+      shape: 'square',
+      pagination: 'count',
+      title: 'Введите почту',
+      description: 'Для российских карт необходимо указать почту, чтобы отправить чек',
+      form: [
+        {
+          id: 'email',
+          placeholder: 'Email',
+          type: 'text',
+        }
+      ],
+      button: 'Next',
     },
   ],
 });
